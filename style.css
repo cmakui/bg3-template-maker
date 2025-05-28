@@ -11,8 +11,9 @@
 }
 
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: var(--background);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: x-large;
 }
 
 /* #templateBackground {
@@ -47,7 +48,61 @@ body {
     flex-direction: row;
 } */
 
+footer {
+    font-size: large;
+    position: absolute;
+    bottom: 5px;
+}
+footer p {
+    color: var(--templateBackground);
+}
+footer p img {
+    height: 20px;
+    margin: auto 2px;
+}
+a, a:visited {
+    /* text-decoration: none; */
+    color: inherit;
+}
+
 p {
-    /* color: var(--fontPrimary); */
-    color: red;
+    color: var(--fontPrimary);
+    /* color: var(--templateBackground); */
+}
+
+#templateContainer {
+    background-color: var(--templateBackground);
+    background-image: url("images/goldFrame.png");
+    background-position: center;
+    background-repeat: no-repeat; 
+    /* background-size: cover; */
+    background-size: contain;
+
+    width: fit-content;
+    height: fit-content;
+    /* padding: 5px; */
+}
+
+#templateItems {
+    display: flex;
+    flex-direction: column;
+}
+
+#GenderAgeHeight, #StatBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.statContainer {
+    margin: auto 5px;
+}
+
+.statContainer img {
+    width: auto;
+    height: 5vh;
+}
+
+.goldHorizontal {
+    width: 350px;
+    height: auto;
 }
