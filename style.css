@@ -65,27 +65,43 @@ a, a:visited {
     color: inherit;
 }
 
-p {
+h2 {
     color: var(--fontPrimary);
+    font-weight: 500;
+}
+p {
+    color: var(--fontSecondary);
     /* color: var(--templateBackground); */
 }
+.statNumber p {
+    color: var(--fontPrimary);
+}
 
-#templateContainer {
+/* #templateContainer {
     background-color: var(--templateBackground);
     background-image: url("images/goldFrame.png");
     background-position: center;
     background-repeat: no-repeat; 
-    /* background-size: cover; */
     background-size: contain;
 
-    width: fit-content;
+    width: 15vw;
     height: fit-content;
-    /* padding: 5px; */
+} */
+ #templateContainer {
+    background-color: var(--templateBackground);
+    width: fit-content;
+    height: 100vh;
 }
 
 #templateItems {
     display: flex;
     flex-direction: column;
+    position: relative;
+    z-index: 1;
+
+    /* margin: 5px 15px; */
+    top: 5px;
+    /* left: 25px; */
 }
 
 #GenderAgeHeight, #StatBar {
@@ -102,7 +118,32 @@ p {
     height: 5vh;
 }
 
+/* .itemContainer, .infoContainer {
+    width: 100%;
+} */
+
 .goldHorizontal {
+    /* width: 35%; */
     width: 350px;
     height: auto;
+}
+
+/* #templateBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+} */
+ #templateBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    z-index: 0;
+}
+#templateBackground img {
+    object-fit: contain;
 }
