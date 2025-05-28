@@ -1,0 +1,40 @@
+:root {
+    --background: rgb(205, 199, 189);
+    --fontPrimary: rgb(214, 206, 200);
+    --fontSecondary: rgb(129, 117, 114);
+    --templateBackground: rgb(23, 23, 21);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: var(--background);
+}
+
+#templateBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 95vh;
+    /* background-color: var(--templateBackground); */
+}
+
+#templateFrame {
+    width: auto;
+    height: 95vh;
+    background-color: var(--templateBackground);
+}
+
+#templateItems {
+    position: absolute;
+}
+
+p {
+    /* color: var(--fontPrimary); */
+    color: red;
+}
